@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+.corpo{
+    margin: 0; 
+    font-family: sans-serif; 
+    background: linear-gradient(180deg, #145369, #25a5be);
+    min-height: 100vh;
+}
+
+button{
+    background-color: #fdfdfd ;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover > i{
+    color: white;
+}
+
+button i{
+    color: blueviolet;
+    /* desabilita os eventos de click do icone  */
+    pointer-events: none; 
+    
+}
+
+input,select{
+    padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd36;
+    padding: 1.rem;
+    border-radius: 15px;
+}
+
+.header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-top: 2rem !important;
+}
+
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form > p, #edit-form > p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-controle{
+    display: flex;
+}
+
+.form-controle>input{
+    margin-right: 1rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;   
+}
+
+#toolbar>h4{
+    margin-bottom: 5rem;
+}
+
+#search{
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search>form{
+    display: flex;
+}
+
+#search>input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.todo>h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+
+.todo>button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #d1ffd1;
+    border-radius: 8px;
+}
+
+.done>h3{
+    color: black;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+h2{
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
